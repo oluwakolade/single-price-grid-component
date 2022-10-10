@@ -1,0 +1,175 @@
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --light-cyan: hsl(179, 62%, 60%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%, );
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: var(--Light-Gray);
+
+
+}
+
+main {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+article {
+    width: 50%;
+}
+
+.section-head {
+
+    background-color: white;
+    padding: 50px;
+}
+
+.section-head h2 {
+    color: var(--Cyan);
+    padding-bottom: 20px;
+}
+
+.section-head h3 {
+    color: var(--Bright-Yellow);
+    padding-bottom: 17px;
+
+}
+
+.section-head p {
+    color: var(--Grayish-Blue);
+
+}
+
+.section-body {
+    display: flex;
+    flex-direction: row;
+}
+
+.section-body h3 {
+    color: white;
+    font-size: 16px;
+}
+
+.section-body li {
+    color: var(--Light-Gray);
+    font-weight: 400;
+    list-style: none;
+}
+
+.section-body-left {
+    background-color: var(--Cyan);
+    width: 50%;
+    padding: 40px;
+}
+
+.section-body-left h3 {
+    padding-bottom: 20px;
+
+}
+
+.section-body-left h4 {
+    padding-bottom: 20px;
+
+}
+
+.section-body-left p {
+    padding-bottom: 23px;
+    color: var(--Light-Gray);
+
+}
+
+.section-body-left h4 {
+    color: var(--Light-Gray);
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.section-body-right {
+    background-color: var(--light-cyan);
+    width: 50%;
+    padding: 40px 80px 40px 40px;
+}
+
+.section-body-right h3 {
+    padding-bottom: 20px;
+}
+
+
+strong {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+button {
+    padding: 15px 100px;
+    color: white;
+    background-color: var(--Bright-Yellow);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Light-Gray);
+    text-decoration: none;
+
+}
+
+ @media (max-width:700px) {
+    body{
+        width: 100%;
+    }
+    .main{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+        
+        
+    }
+    .section-head{
+        margin-top: 200px;
+        width: 100%;
+        
+        
+
+    }
+
+    .section-body {
+        display: flex;
+        flex-direction: column;
+        width: 200%;
+
+    }
+    button{
+        padding: 15px 100px;
+
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--Light-Gray);
+        text-decoration: none;
+        margin-top: 300px;
+    }
+
+} 
